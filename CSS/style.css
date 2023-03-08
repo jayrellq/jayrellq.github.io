@@ -42,7 +42,7 @@ html {
 }
 
 body {
-    background: var(--clr-light);
+    background: linear-gradient(to right, var(--clr-light), 80%, #d3e3fc);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
