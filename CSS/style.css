@@ -128,10 +128,6 @@ header {
 }
 
 @media (min-width: 800px) {
-    .nav-toggle {
-        display: none;
-    }
-
     .nav {
         color: var(--clr-dark);
         top: 0;
@@ -161,6 +157,10 @@ header {
     
     .nav__link:hover {
         color: var(--clr-accent);
+    }
+
+    .nav-toggle {
+        display: none;
     }
 }
 
