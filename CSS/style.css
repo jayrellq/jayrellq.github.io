@@ -355,6 +355,7 @@ header {
 .tabs {
     float: left;
     width: 30%;
+    border-top: thick solid var(--clr-dark);
 }
 
 .tabs button {
@@ -382,7 +383,7 @@ header {
     float: left;
     padding: 22px 16px;
     width: 70%;
-    border-left: none;
+    border-top: thick solid var(--clr-dark);
 }
 
 /* My Projects section */
