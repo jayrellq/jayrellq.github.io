@@ -347,14 +347,13 @@ header {
 
 .experience {
     max-width: 1000px;
-    margin: 0 auto 8em;
-    min-height: 500px;
+    margin: 0 auto;
+    overflow: scroll;
 }
 
 .tabs {
     float: left;
     width: 30%;
-    height: auto;
 }
 
 .tabs button {
@@ -383,7 +382,6 @@ header {
     padding: 22px 16px;
     width: 70%;
     border-left: none;
-    height: auto;
 }
 
 /* My Projects section */
