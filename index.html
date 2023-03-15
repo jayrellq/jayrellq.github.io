@@ -31,6 +31,7 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#exp" class="nav__link">Experience</a></li>
                     <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
                 </ul>
             </nav>
@@ -60,6 +61,26 @@
             </div>
 
             <img src="Images/IMG_6324.jpg" alt="In Front of Engineering" class="about-me__img">
+        </section>
+
+        <!-- Experience -->
+        <section class="experience" id="exp">
+            <h2 class="section__title section__title--exp">Experience</h2>
+
+            <div class="tabs">
+                <button class="tab__link" onclick="openTab(event, 'ComputerCare')" id="defaultOpen">ComputerCare</button>
+                <button class="tab__link" onclick="openTab(event, 'UCI')">UCI</button>
+            </div>
+
+            <div class="tab" id="ComputerCare">
+                <h3>ComputerCare</h3>
+                <p>I worked at ComputerCare.</p>
+            </div>
+
+            <div class="tab" id="UCI">
+                <h3>University of California, Irvine</h3>
+                <p>I graduated from the University of California, Irvine.</p>
+            </div>
         </section>
 
         <!-- My Projects -->
