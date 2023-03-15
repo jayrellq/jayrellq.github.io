@@ -347,13 +347,12 @@ header {
 
 .experience {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 8em;
     min-height: 500px;
 }
 
 .tabs {
     float: left;
-    border-right: 2px solid var(--clr-accent);
     width: 30%;
     height: auto;
 }
@@ -382,7 +381,6 @@ header {
 .tab {
     float: left;
     padding: 22px 16px;
-    border-left: 2px solid var(--clr-accent);
     width: 70%;
     border-left: none;
     height: auto;
