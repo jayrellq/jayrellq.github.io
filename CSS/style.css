@@ -353,6 +353,11 @@ header {
     overflow: scroll;
 }
 
+.section__title--exp,
+.section__subtitle--exp {
+    text-align: center;
+}
+
 .tabs {
     float: left;
     width: 30%;
@@ -483,4 +488,5 @@ header {
 .portfolio-item-individual img {
     margin-left: auto;
     margin-right: auto;
+    box-shadow: var(--bs);
 }
