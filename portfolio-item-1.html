@@ -58,18 +58,25 @@
 
         <div class="portfolio-item-individual">
             <p>
-                Hello hello hello hello hello hello hello hello hello hello
-                Hello hello hello hello hello hello hello hello hello hello
+                I worked with a team to build a device that follows the direction of the sun and stores solar energy.
+                The device was built using a Raspberry Pi, servos, photoresistors, and a solar panel.
+                The energy absorbed is stored in a battery.
             </p>
-            <img src="Images/filler.png" alt="">
+            <img src="Images/STPD_hardware.png" alt="Hardware integration">
             <p>
-                Hello hello hello hello hello hello hello hello hello hello
-                Hello hello hello hello hello hello hello hello hello hello
+                The device was mainly programmed using Python.
+                In order to track the brightest source of light, we calculate and compare the averages of the inputs of the four photoresistors.
+                If the top left and top right photoresistors have a larger average value than the bottom ones, the vertical servo moves the head of the device up.
+                If the top left and bottom left photoresistors have a larger average value than the right ones, the horizontal servo moves the head to the left.
             </p>
+            <img src="Images/STPD_PCB.png" alt="PCB">
             <p>
-                Hello hello hello hello hello hello hello hello hello hello
-                Hello hello hello hello hello hello hello hello hello hello
+                We also applied machine learning to predict the optimal position of the device based on previous data gathered.
+                During certain times of the day, the positions of the servos are recored and stored in a database.
+                A polynomial regression model is then created based on the dataset.
+                The model is used to predict the optimal position of the servos depending on the current time of the day.
             </p>
+            <img src="Images/STPD_software.png" alt="Software integration">
         </div>
 
         <!-- Footer -->
