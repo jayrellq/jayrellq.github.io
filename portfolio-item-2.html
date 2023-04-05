@@ -58,13 +58,22 @@
 
         <div class="portfolio-item-individual">
             <p>
-                Hello hello hello hello hello hello hello hello hello hello
-                Hello hello hello hello hello hello hello hello hello hello
+                I used a Raspberry Pi to implement a system that monitors the temperature and humidity of the air and calculates the optimal irrigation time to keep a sprinkler turned on.
+                A hygrothermograph is used to measure the temperature and humidity and the information is displayed on a LCD.
+                A LED bulb is also used as an indicator for the sprinkler.
             </p>
             <img src="Images/IMG_1953.jpg" alt="Hardware">
             <p>
-                Hello hello hello hello hello hello hello hello hello hello
-                Hello hello hello hello hello hello hello hello hello hello
+                The system was programmed using Python.
+                The hygrothermograph measures the temperature and humidity every minute.
+                Every hour, it averages the data it gathered and compares it to data extracted from the <a href="https://cimis.water.ca.gov/">California Irrigation Management Information System (CIMIS) website</a>.
+                The local data and CIMIS data are then used to calcualate the ideal irrigation time.
+            </p>
+            <p>
+                ET is the evapotranspiration, or the loss of water due to evaporation and transpiration.
+                It is used as an indicator for how much water plants need for healthy growth.
+                It is therefore essential in calculating the amount of water needed to irrigate.
+                The amount of water needed is then used to determine the amount of time needed for a sprinkler to be turned on.
             </p>
             <img src="Images/WMS_log.png" alt="Log">
         </div>
