@@ -490,3 +490,10 @@ header {
     margin-right: auto;
     box-shadow: var(--bs);
 }
+
+.portfolio-item-individual iframe {
+    display: block;
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
