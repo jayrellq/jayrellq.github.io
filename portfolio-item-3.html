@@ -50,26 +50,32 @@
 
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                Simple Super <strong>Mario Bros. Game</strong>
+                Weather <strong>Monitoring System</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Simplified version of a classic</p>
-            <img src="Images/SMB_screenshot.png" alt="Screenshot of game" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro">Optimizes time for a sprinkler</p>
+            <img src="Images/IMG_1986.png" alt="Prototype of weather system" class="intro__img">
         </section>
 
         <div class="portfolio-item-individual">
             <p>
-                I designed the backend for a simple version of the Super Mario Bros. game in Android Studio.
-                The game was programmed using Java and the controls have been limited to left, right, and jump.
+                I used a Raspberry Pi to implement a system that monitors the temperature and humidity of the air and calculates the optimal irrigation time to keep a sprinkler turned on.
+                A hygrothermograph is used to measure the temperature and humidity and the information is displayed on a LCD.
+                A LED bulb is also used as an indicator for the sprinkler.
             </p>
-            <img src="Images/SMB_gamescreen.png" alt="Game screen">
+            <img src="Images/IMG_1953.jpg" alt="Hardware">
             <p>
-                A lot of the functions of the original game have been implemented.
-                The player controls Mario and must progress through multiple levels before all lives are lost or before the timer runs out.
-                There are certain blocks that Mario can break that give items.
-                A few of those items can transform Mario when consumed.
-                There are also different enemies that Mario must fight or avoid.
-                If hit by an enemy, Mario loses a life and must restart at the beginning of the level.
+                The system was programmed using Python.
+                The hygrothermograph measures the temperature and humidity every minute.
+                Every hour, it averages the data it gathered and compares it to data extracted from the <a href="https://cimis.water.ca.gov/">California Irrigation Management Information System (CIMIS) website</a>.
+                The local data and CIMIS data are then used to calcualate the ideal irrigation time.
             </p>
+            <p>
+                ET is the evapotranspiration, or the loss of water due to evaporation and transpiration.
+                The local ET can be calculated by using the equation: local ET = (CIMIS ET) * ((local T / CIMIS T) / (local H / CIMIS H)).
+                It is used as an indicator for how much water plants need for healthy growth and is therefore essential in calculating the amount of water needed to irrigate.
+                The amount of water needed is then used to determine the amount of time needed for a sprinkler to be turned on.
+            </p>
+            <img src="Images/WMS_log.png" alt="Log">
         </div>
 
         <!-- Footer -->
