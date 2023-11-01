@@ -63,6 +63,7 @@
                 I worked with a team to build a device that follows the direction of the sun and predicts the optimal position in order to absorb the most solar energy.
                 The device was built using a Raspberry Pi, servos, photoresistors, and a solar panel.
                 The energy absorbed is stored in a battery.
+                We utilized a two-axis tracking system that allowed the device to potentially gain 20-35% more solar energy.
             </p>
             <img src="Images/STPD_hardware.png" alt="Hardware integration">
             <p>
@@ -73,7 +74,7 @@
             </p>
             <img src="Images/STPD_PCB.png" alt="PCB">
             <p>
-                We also applied machine learning to predict the optimal position of the device based on previous data gathered.
+                We also applied machine learning using scikit-learn to predict the optimal position of the device based on previous data gathered.
                 During certain times of the day, the positions of the servos are recored and stored in a database.
                 A polynomial regression model is then created based on the dataset.
                 The model is used to predict the optimal position of the servos depending on the current time of the day.
